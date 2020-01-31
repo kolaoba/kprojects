@@ -10,6 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
     overflow-x: hidden;
+    
 }
 
 a{
@@ -89,10 +90,11 @@ p{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.5s ease-in;
 }
 
 .btn:hover{
-    background: #01b2ec;
+    background: #0099cc;
 }
 
 .btn-dark{
@@ -135,12 +137,13 @@ p{
 #navbar ul li a{
     color: #fff;
     padding: 0.5rem 1rem;
-    
+    transition: all 0.3s ease-in;
+    border-radius: 10px;
 }
 
 #navbar ul li a:hover{
     background: #4bc2ea;
-    border-radius: 5px;
+    
 }
 
 /* Showcase */
@@ -212,7 +215,9 @@ button{
     background-color: #222222;
     border: px solid;
     padding: 0.5rem 1rem;
-    color: #fff
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 #readMore{

@@ -52,7 +52,9 @@
         justify-content: center;
         /* border: 5px solid red; */
     }
-
+    #contactus{
+        margin-bottom: 1px;
+    }
     #contact .contact-box{
         flex-direction: column;
         /* border: 5px solid red; */
@@ -75,6 +77,9 @@
     .lead{
         font-size: 1rem;
     }
+    #about .items{
+        padding: 0.05rem;
+    }
     /* #navbar{display: none;} */
     /* #about{display: none;} */
     /* #gallery{display: none;} */
@@ -85,7 +90,14 @@
 }
 
 
-@media(max-width:330px){
+@media(max-width:360px){
+    #navbar ul li a{
+        color: #fff;
+        padding: 0.5rem auto;
+    }
+
+}
+@media(max-width:320px){
     #navbar ul li a{
         color: #fff;
         padding: 0.5rem 0.1rem;
