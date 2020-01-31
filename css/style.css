@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin:0.75rem 0;
+}
+
+/* Utility Classes */
+.bg-dark{
+    background: #222222;
+    color: #fff;
+}
+.bg-lessdark{
+    background:linear-gradient(rgb(77, 76, 76),black);
+    color: #fff;
+}
+
+.bg-light{
+    background: #fff;
+    color: #222222;
+}
+.center{
+    align-items: center;
+}
+.container{
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-primary{
+    color: #4bc2ea;
+}
+.l-heading{
+    font-size: 3.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    transform-style: inherit;
+}
+
+
+.m-heading{
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+
+
+.lead{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.py-1{padding: 1.5rem 0;}
+.py-2{padding: 2rem 0;}
+.py-3{padding: 3rem 0;}
+
+.p-1{padding: 0.5rem;}
+.p-2{padding: 1.5rem;}
+.p-3{padding: 2.5rem;}
+.p-top{padding-top: 2rem;}
+
+.btn{
+    display: inline-block;
+    color: #fff;
+    background: #4bc2ea;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #01b2ec;
+}
+
+.btn-dark{
+    background: #333;
+    color: #fff;
+}
+
+.logo{
+    display: flex;
+    /* flex-direction: row; */
+    /* border: 5px solid red; */
+}
+
+.logo img{
+    position: relative;
+    padding: 0.2rem;
+}
+.white-text{
+    color: rgba(255, 255, 255, 0.74);
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: #222222 ;
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li a{
+    color: #fff;
+    padding: 0.5rem 1rem;
+    
+}
+
+#navbar ul li a:hover{
+    background: #4bc2ea;
+    border-radius: 5px;
+}
+
+/* Showcase */
+/* #showcase{
+    background: #333 url('/img/abacus.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #ffffff; */
+
+
+#showcase{
+    position: relative;
+    display: block;
+    background: #333 url('/img/abacus.jpg') no-repeat center center/cover;
+    background-attachment:fixed;
+    height: 100vh;
+}
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100%;
+    /* padding: 0 2rem; */
+    color: #ffffff;
+    /* border:5px solid red; */
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+#showcase .showcase-content .showcase-text{
+    /* background-color: #22222228; */
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Section: About Us */
+.items{
+    display: inline-flex;
+    padding: 1rem;
+    color: #fff;
+    
+}
+
+#about .items .item{
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#about .items .item i{
+    background: #4bc2ea;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+
+#about #moretext{
+    display:none;
+}
+
+button{
+    display: inline-block;
+}
+#myBtn{
+    display: inline-block;
+    /* position: absolute; */
+    background-color: #222222;
+    border: px solid;
+    padding: 0.5rem 1rem;
+    color: #fff
+}
+
+#readMore{
+    display: flex;
+    width: 9rem;
+    position: relative;
+    /* bottom: 1.5rem; */
+    margin:auto;
+} 
+
+/* Gallery */
+
+
+.gallery-images{
+    display: flex;
+    /* flex: 1; */
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    /* border: 5px solid red; */
+}
+#gallery{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0;
+    /* border: 5px solid red; */
+    justify-content: center;
+
+}
+.g-items{
+    display: inline-flex;
+    padding: 1rem;
+    justify-content: center;
+    flex: 1;
+    
+}    
+    
+
+
+.gallery-image img{
+    /* height: 100%; */
+    object-fit: cover;
+    border-radius: 10px;
+    /* border: 5px solid red; */
+}
+
+.g-container{
+    /* max-width: 1100px; */
+    margin: auto;
+    padding: 0 0rem;
+    overflow: hidden;
+    
+}
+
+#events h2, #gallery h2{
+    margin-bottom: 2rem;
+}
+
+
+
+#viewmore{
+    display: flex;
+    width: 9rem;
+    margin:auto;
+    margin-top: 1rem;
+} 
+
+/* Section: Contact*/
+#contact{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+#contact h2{
+    color: #4bc2ea;
+}
+#contact #contactus{
+    /* border: 5px solid red; */
+    position: relative;
+    top: 0.8rem;
+    padding: 1rem;
+}
+#contact .contact-box{
+    display: flex;
+    justify-content: center;
+    /* border: 5px solid red; */
+}
+
+#contact .contact-box div{
+    flex: 1;
+}
+#contact .contact-box .contact-address{
+    padding: 0.5rem;
+    text-align: center;
+}
+
+
+ #contact .contact-form{
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid red; */  
+} 
+
+#contact .contact-form .total-form{
+    /* border: 5px solid red; */
+    width: 30%;
+    margin: auto;
+}
+
+
+#contact .contact-form label{
+    display: block ;
+    padding: 0.5rem;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea{
+    width: 100%;
+    padding: 0.5rem
+} 
+
+/* Section: Events */
+.gallery-images{
+    display: inline-flex;
+    /* flex: 1; */
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    /* border: 5px solid red; */
+}
+#events{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0;
+    /* border: 5px solid red; */
+
+}
+.g-items{
+    display: inline-flex;
+    padding: 1rem;
+    justify-content: center;
+    flex: 1;
+    
+}    
+    
+
+.gallery-image{
+    height: 250px;
+    /* border: 5px solid red; */
+   
+}
+.gallery-image img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+
+
+
+ 
+
