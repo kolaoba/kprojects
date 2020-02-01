@@ -185,7 +185,7 @@ p{
 }
 
 /* Section: About Us */
-.items{
+#about .items{
     display: inline-flex;
     padding: 1rem;
     color: #fff;
@@ -217,11 +217,15 @@ button{
     display: inline-block;
     /* position: absolute; */
     background-color: #222222;
-    border: px solid;
+    border: 2px solid;
     padding: 0.5rem 1rem;
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
+    transition: all 0.4s ease;
+}
+#myBtn:hover{
+    background-color: #4bc2ea;
 }
 
 #readMore{
