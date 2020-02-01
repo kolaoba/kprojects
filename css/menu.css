@@ -30,7 +30,7 @@
     .menu-wrap .toggler{
         position: absolute;
         top: 15px;
-        left:295px;
+        left:320px;
         z-index: 20004;
         width: 50px;
         height: 50px;
@@ -40,7 +40,7 @@
     .menu-wrap .hamburger{
         position: absolute;
         top: 15px;
-        left:295px;
+        left:320px;
         z-index: 20001;
         width: 40px;
         height: 40px;
