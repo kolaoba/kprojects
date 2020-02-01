@@ -37,6 +37,9 @@
 
 /* Smartphones */
 @media(max-width:500px){
+    #about{
+        text-align: center;
+    }
     #about h2{
         padding-bottom: 1rem;
     }
