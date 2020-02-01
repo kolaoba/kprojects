@@ -127,7 +127,7 @@
     }
     
     .menu-wrap .menu > div{
-        background: rgba(0, 0, 0, 0.863) ;
+        background: rgba(0, 0, 0, 0.836) ;
         width: 200vw;
         height: 100vh;
         display: flex;
@@ -153,9 +153,9 @@
         transition: opacity 0.4s ease ;
     }
     .menu-wrap .menu > div > div > ul > li {
-        color: #4bc2ea;
         /* border: 5px solid red; */
         font-size: 1.5rem;
+        font-weight: bold;
         padding: 1rem;
     }
     .menu-wrap .menu > div > div > ul > li > a{
