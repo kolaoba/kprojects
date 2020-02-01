@@ -106,6 +106,8 @@ p{
     display: flex;
     /* flex-direction: row; */
     /* border: 5px solid red; */
+    text-align: center;
+    align-items: center;
 }
 
 .logo img{
@@ -125,13 +127,15 @@ p{
     color: #fff;
     justify-content: space-between;
     z-index: 1;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 #navbar ul{
     display: flex;
     align-items: center;
     list-style: none;
+    /* border: 5px solid red; */
+    margin-top: 1rem;
 }
 
 #navbar ul li a{

@@ -1,4 +1,5 @@
 .glide__arrow {
+  
   position: absolute;
   display: block;
   top: 50%;
@@ -15,7 +16,9 @@
   cursor: pointer;
   transition: opacity 150ms ease, border 300ms ease-in-out;
   transform: translateY(-50%);
-  line-height: 1; }
+  line-height: 1;
+  visibility: hidden;
+   }
   .glide__arrow:focus {
     outline: none; }
   .glide__arrow:hover {
@@ -84,7 +87,8 @@
     cursor: pointer;
     transition: opacity 150ms ease, border 300ms ease-in-out;
     transform: translateY(-50%);
-    line-height: 1; }
+    line-height: 1;
+    visibility: hidden; }
   .glide__arrow2:focus {
     outline: none; }
   .glide__arrow2:hover {

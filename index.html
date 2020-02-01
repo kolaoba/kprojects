@@ -9,6 +9,7 @@
     <!-- CSS links -->
     
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
     <link rel="stylesheet" media="screen and (max-width: 1100px)" href="css/widescreen.css">
     <link rel="stylesheet" href="css/lightbox.css">
@@ -27,18 +28,28 @@
         <h1 class="logo">
             <img src="/img/photo.jpg" height="60" width="60">
             <span class="text-primary">
-                 Maths <br> <span class="white-text">For Life</span> 
+                 Maths <span class="white-text">For Life</span> 
             </span>
         </h1>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="#showcase">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#events">Events</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#donate">Donate</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <ul>
-            <li><a href="#showcase">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#donate">Donate</a></li>
-        </ul>
     </nav>
     <!-- Header: Showcase -->
     <header id="showcase">
@@ -57,7 +68,7 @@
     <!-- Section: About Us -->
     <section id="about" class="bg-dark py-1">
         <div class="container">
-            <h2 class="m-leading text-center"> <span class="text-primary">About</span> Us</h2>
+            <h2 class="m-leading text-center"> <span class="text-primary ">About</span> Us</h2>
             <div class="items">
                 <div class="item">
                    <i class="fas fa-eye fa-2x"></i>
@@ -92,7 +103,7 @@
                         7.Increase competency in different aspects of Mathematics among student across all levels. <br>
                         8.Partner with governments and other private sectors in training Nigerians using Mathematics and related fields to help attain a higher level of understanding in their profession.</span>
                      </p>
-                     <a href="#about"><button  id="myBtn" onclick="readMore()" >Read more</button></a>
+                     <button  id="myBtn" onclick="readMore()" >Read more</button>
                     </div>
                 </div>
             </div>

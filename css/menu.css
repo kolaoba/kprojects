@@ -1,0 +1,167 @@
+.toggler, .hamburger{
+    display:none;
+}
+
+@media(max-width:500px){
+    /* #navbar .menu{
+        display:none;
+    } */
+    .logo img{
+        height: 50px;
+        width: 50px;
+    }
+
+    #navbar .text-primary{
+        padding: 0 0.3rem;
+        font-size: 1.2rem;
+    }
+    .hamburger{
+        display: block;
+    }
+    .toggler{
+        display:block;
+    }
+    .menu-wrap{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20000;
+    }
+    .menu-wrap .toggler{
+        position: absolute;
+        top: 15px;
+        left:295px;
+        z-index: 20004;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+
+    .menu-wrap .hamburger{
+        position: absolute;
+        top: 15px;
+        left:295px;
+        z-index: 20001;
+        width: 40px;
+        height: 40px;
+        padding: 0.5rem;
+        background: #4bc2ea;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+    }
+    /* Hamburger Line */
+    .menu-wrap .hamburger >div{
+        position: relative;
+        flex: none;
+        width: 90%;
+        height: 2px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        transition: all 1s ease;
+    }
+
+    /* Hamburger Lines - Top and Bottom */
+    .menu-wrap .hamburger >div::before,
+    .menu-wrap .hamburger >div::after{
+        content: '';
+        position: absolute;
+        z-index: 20001;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background: inherit;   
+    }
+    .menu-wrap .hamburger >div::after{
+        top: 10px;
+    }
+
+    /* Toggler animation */
+    .menu-wrap .toggler:checked + .hamburger > div {
+        transform: rotate(1215deg);
+    }
+    /* Turns lines into X */
+    .menu-wrap .toggler:checked + .hamburger > div:before,
+    .menu-wrap .toggler:checked + .hamburger > div:after{
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    .menu-wrap .menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 5px solid red; */
+    }
+    /* show menu */
+    .menu-wrap .toggler:checked ~ .menu{
+        visibility: visible;
+
+    }
+    .menu-wrap .toggler:checked ~ .menu > div{
+        transform: scale(1);
+        transition-duration: 0.5s;
+    }
+
+    .menu-wrap .toggler:checked ~ .menu > div > div{
+        opacity: 1;
+        transition: opacity 0.4s ease 0.4s;
+    }
+
+    .menu-wrap .menu{
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        display: flex;
+        overflow: hidden;
+        /* border: 5px solid red; */
+    }
+    
+    .menu-wrap .menu > div{
+        background: rgba(0, 0, 0, 0.863) ;
+        width: 200vw;
+        height: 250vw;
+        display: flex;
+        border-radius: 100%;
+        flex: none;
+        align-items: center;
+        justify-content: left;
+       
+        
+        transform: scale(0);
+        transition: all 0.5s ease;
+    }
+    .menu-wrap .menu li{
+        position: relative;
+        left: 75%;
+        /* border: 5px solid red; */
+    }
+
+    .menu-wrap .menu > div > div{
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.4s ease ;
+    }
+    .menu-wrap .menu > div > div > ul > li {
+        color: #4bc2ea;
+        /* border: 5px solid red; */
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .menu-wrap .menu > div > div > ul > li > a{
+        color: inherit;
+    }
+    .menu-wrap .menu > div > div > ul > li > a:hover{
+        color: #4bc2ea;
+    }
+}
