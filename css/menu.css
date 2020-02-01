@@ -50,7 +50,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 3px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
     /* Hamburger Line */
     .menu-wrap .hamburger >div{
