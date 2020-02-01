@@ -28,19 +28,19 @@
         z-index: 20000;
     }
     .menu-wrap .toggler{
-        position: absolute;
-        top: 15px;
-        left:320px;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
         z-index: 20004;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         opacity: 0;
     }
 
     .menu-wrap .hamburger{
-        position: absolute;
-        top: 15px;
-        left:320px;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
         z-index: 20001;
         width: 40px;
         height: 40px;
@@ -50,6 +50,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 3px;
+        border: 1px solid red;
     }
     /* Hamburger Line */
     .menu-wrap .hamburger >div{
@@ -128,20 +129,19 @@
     .menu-wrap .menu > div{
         background: rgba(0, 0, 0, 0.863) ;
         width: 200vw;
-        height: 250vw;
+        height: 100vh;
         display: flex;
-        border-radius: 100%;
+        border-radius: 50%;
         flex: none;
         align-items: center;
         justify-content: left;
-       
-        
         transform: scale(0);
         transition: all 0.5s ease;
     }
     .menu-wrap .menu li{
         position: relative;
         left: 75%;
+        align-items: center;
         /* border: 5px solid red; */
     }
 
