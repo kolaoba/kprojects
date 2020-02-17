@@ -22,7 +22,7 @@ window.addEventListener('scroll', function() {
 
 
 // Smooth Scrolling
-$('#navbar a, .btn #myBtn').on('click', function(event) {
+$('#navbar a, .btn').on('click', function(event) {
   if (this.hash !== '') {
     event.preventDefault();
 
@@ -37,11 +37,12 @@ $('#navbar a, .btn #myBtn').on('click', function(event) {
   }
 });
 
+
 // Read More Button
 function readMore() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("moretext");
-  var btnText = document.getElementById("myBtn");
+  let dots = document.getElementById("dots");
+  let moreText = document.getElementById("moretext");
+  let btnText = document.getElementById("myBtn");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
@@ -54,3 +55,6 @@ function readMore() {
   }
 }
 
+
+
+       
