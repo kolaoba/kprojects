@@ -22,7 +22,7 @@ window.addEventListener('scroll', function() {
 
 
 // Smooth Scrolling
-$('#navbar a, .btn').on('click', function(event) {
+$('#navbar a, .btn, #myBtn').on('click', function(event) {
   if (this.hash !== '') {
     event.preventDefault();
 
@@ -39,22 +39,32 @@ $('#navbar a, .btn').on('click', function(event) {
 
 
 // Read More Button
-function readMore() {
-  let dots = document.getElementById("dots");
-  let moreText = document.getElementById("moretext");
-  let btnText = document.getElementById("myBtn");
+// function readMore() {
+//   let dots = document.getElementById("dots");
+//   let moreText = document.getElementById("moretext");
+//   let btnText = document.getElementById("myBtn");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
+//   if (dots.style.display === "none") {
+//     dots.style.display = "inline";
+//     btnText.innerHTML = "Read more";
+//     moreText.style.display = "none";
+//   } else {
+//     dots.style.display = "none";
+//     btnText.innerHTML = "Read less";
+//     moreText.style.display = "inline";
+//   }
+// }
+
+function changeHeight() {
+  var readmore = $('#myBtn');
+  if (readmore.text() == 'Read more') {
+      readmore.text("Read less");
+      $("#textBody").animate({maxHeight : '150vh', height : 'auto'},"slow");
   } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
-
+      readmore.text("Read more");
+      $("#textBody").animate({maxHeight : '15vh', height: 'auto'},"slow");
+  }           
+};
 
 
        

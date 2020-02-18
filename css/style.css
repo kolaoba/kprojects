@@ -228,6 +228,11 @@ button{
     background-color: #4bc2ea;
 }
 
+#textBody {
+    overflow: hidden;
+    max-height: 15vh ;
+}
+
 #readMore{
     display: flex;
     width: 9rem;
